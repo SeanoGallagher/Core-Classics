@@ -26,30 +26,37 @@ public class MenuController: MonoBehaviour
     {
         if (paused)
         {
-            paused = false;
             ClosePauseMenu();
         }
         else
         {
-            paused = true;
             OpenPauseMenu();
         }
     }
-    void OpenPauseMenu()
+    public void OpenPauseMenu()
     {
         if (SceneManager.GetActiveScene().name == "Main Menu")
         {
             return;
         }
+        paused = true;
         pauseMenu.SetActive(true);
+        Time.timeScale = 0;
     }
-    void ClosePauseMenu()
+    public void ClosePauseMenu()
     {
         if (SceneManager.GetActiveScene().name == "Main")
         {
             return;
         }
+        paused = false;
         pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     // Update is called once per frame
