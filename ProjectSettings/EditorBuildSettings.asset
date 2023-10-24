@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game_1.unity
     guid: 3723e256b22eeb44392c8462e30fb5fd
+  - enabled: 1
+    path: Assets/Snake_Game_CCA/Assets/Scenes/StartScreen.unity
+    guid: 63813e95ecaf3034193898de5d10c2de
+  - enabled: 1
+    path: Assets/Snake_Game_CCA/Assets/Scenes/Snake.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
