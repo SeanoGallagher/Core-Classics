@@ -3,11 +3,6 @@
         * The fixed timestep in project settings basically adjusts the speed of the snake. You can change it there manually or you can write 
           code for it to change if a user selects a button
 
-        * Tutorial left off at 39:16
-
-        * I think that I might have to create a new file to store the score text and update in. It seems to be conflicting with the other components
-          and shows up as not being a valid instance of the object
-
 
  */
 
@@ -36,6 +31,7 @@ public class Snake : MonoBehaviour
         _segments.Add(this.transform);
         scoreText.text = "Score: " + Scoring.totalScore;
         topScoreText.text = "Top Score: " + Scoring.topScore;
+        Time.fixedDeltaTime = 0.07f;
     }
 
     private void Update() //Gets called during every frame of the game to update variables
@@ -95,6 +91,7 @@ public class Snake : MonoBehaviour
         _segments.Add(this.transform);
 
         this.transform.position = Vector3.zero; //Puts the snake head back in the start position
+        Time.fixedDeltaTime = 0.07f;
     }
 
     private void OnTriggerEnter2D(Collider2D other) //Function that detects collision with different objects
@@ -113,5 +110,10 @@ public class Snake : MonoBehaviour
         } else if (other.tag == "Obstacle") { //If the player runs into a wall or themselves the game resets (walls and body tagged as "Obstacle")
             ResetState();
         }
+    }
+
+    void OnDestroy()
+    {
+        Time.fixedDeltaTime = 0.02f;
     }
 }
