@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2219a79f2b343af9f400cef9bda480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketSpeed: 6
+  racketSpeed: 8
 --- !u!50 &1071100544
 Rigidbody2D:
   serializedVersion: 4
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a9c24df56d54d6498ca6431b48871a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketSpeed: 6
+  racketSpeed: 8
 --- !u!50 &1433423448
 Rigidbody2D:
   serializedVersion: 4
