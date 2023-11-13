@@ -5,19 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Main Menu/Scenes/Main Menu.unity
     guid: bf948cde2a94c7b4a81a758291b0b708
   - enabled: 1
-    path: Assets/Snake_Game_CCA/Assets/Scenes/Snake.unity
-    guid: 30efe99a355332e4aa7dad71136ef46f
-  - enabled: 1
     path: Assets/Snake_Game_CCA/Assets/Scenes/SnakeStartScreen.unity
     guid: 63813e95ecaf3034193898de5d10c2de
   - enabled: 1
+    path: Assets/Snake_Game_CCA/Assets/Scenes/Snake.unity
+    guid: 30efe99a355332e4aa7dad71136ef46f
+  - enabled: 1
     path: Assets/TicTacToe/Scenes/TicTacToeScene.unity
     guid: 3630af98183c92d46bf5073c706c8737
+  - enabled: 1
+    path: Assets/Pong/Scenes/Pong Menu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Pong/Scenes/Pong Game.unity
+    guid: a28ad45aed5454ce694d347b05fdded6
+  - enabled: 1
+    path: Assets/Pong/Scenes/Pong Game Over.unity
+    guid: 559abcaf8901d4d9c8c9a24b5f0c92ae
   m_configObjects: {}

@@ -13,7 +13,6 @@ public class MenuController: MonoBehaviour
     {
         paused = false;
         pauseMenu = GameObject.FindGameObjectWithTag("Pause Menu");
-        Debug.Log(pauseMenu.name);
         ClosePauseMenu();
     }
 
