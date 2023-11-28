@@ -40,15 +40,37 @@ public class Snake : MonoBehaviour
         {
             _direction = Vector2.up; //Changes the direction of the snake to travel upwards
         }
+        else if (Input.GetKeyDown(KeyCode.UpArrow)) //Basically stating that when the "UpArrow" key is pressed, the following will happen
+        {
+            _direction = Vector2.up; //Changes the direction of the snake to travel upwards
+        }
+
+
         else if (Input.GetKeyDown(KeyCode.S)) //If the "s" key is pressed
         {
             _direction = Vector2.down; //Changes the direction of the snake to travel upwards
         }
+        else if (Input.GetKeyDown(KeyCode.DownArrow)) //If the "DownArrow" key is pressed
+        {
+            _direction = Vector2.down; //Changes the direction of the snake to travel upwards
+        }
+
+
         else if (Input.GetKeyDown(KeyCode.A)) //If the "a" key is pressed
         {
             _direction = Vector2.left; //Changes the direction of the snake to travel left
         }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow)) //If the "LeftArrow" key is pressed
+        {
+            _direction = Vector2.left; //Changes the direction of the snake to travel left
+        }
+
+
         else if (Input.GetKeyDown(KeyCode.D)) //If the "d" key is pressed
+        {
+            _direction = Vector2.right; //Changes the direction of the snake to travel right
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow)) //If the "RightArrow" key is pressed
         {
             _direction = Vector2.right; //Changes the direction of the snake to travel right
         }
