@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pong/Scenes/Pong Game Over.unity
     guid: 559abcaf8901d4d9c8c9a24b5f0c92ae
+  - enabled: 1
+    path: Assets/Pixel Parry Game/Scenes/Pixel Parry Game.unity
+    guid: 9cbf27e8449469a48b34623ed7d65fad
+  - enabled: 1
+    path: Assets/Pixel Parry Game/Scenes/PPGameWon.unity
+    guid: ed18e787972854a4a99ba88dc3a1319d
+  - enabled: 1
+    path: Assets/Pixel Parry Game/Scenes/PPGameOver.unity
+    guid: af76edc736c5c01419aa604852953663
   m_configObjects: {}
