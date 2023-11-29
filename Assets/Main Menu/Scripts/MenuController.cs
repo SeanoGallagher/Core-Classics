@@ -32,6 +32,7 @@ public class MenuController: MonoBehaviour
             OpenPauseMenu();
         }
     }
+
     public void OpenPauseMenu()
     {
         if (SceneManager.GetActiveScene().name == "Main Menu")
@@ -42,6 +43,7 @@ public class MenuController: MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
+
     public void ClosePauseMenu()
     {
         if (SceneManager.GetActiveScene().name == "Main")
