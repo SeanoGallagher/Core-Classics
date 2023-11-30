@@ -151,12 +151,14 @@ void WinnerDisplay(int indexIn)
     if(whoseTurn == 0)
     {
         xPlayersScore++; // updating the score for X
+        PlayerPrefs.SetInt("TicTacToeP1HighScore", (PlayerPrefs.GetInt("TicTacToeP1HighScore")) + 1); //Line of code added by Mason Audet on 11/29/23 for global score
         xPlayersScoreText.text = xPlayersScore.ToString(); // updating the text 
         winnerText.text = " Player X wins!";
     }
     else if(whoseTurn == 1)
     {
         oPlayersScore++; // updating the score for O
+        PlayerPrefs.SetInt("TicTacToeP2HighScore", (PlayerPrefs.GetInt("TicTacToeP2HighScore")) + 1); //Line of code added by Mason Audet on 11/29/23 for global score
         oPlayersScoreText.text = oPlayersScore.ToString();//updating the text 
         winnerText.text = " Player O wins!";
     }

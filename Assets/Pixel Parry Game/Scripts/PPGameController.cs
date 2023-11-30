@@ -21,6 +21,9 @@ public class PPGameController : MonoBehaviour
 
         yield return new WaitForSeconds(gameEndTimer);
 
+        //Added in this line to track the global game score.
+        PlayerPrefs.SetInt("PixelParryHighScore", PlayerPrefs.GetInt("PixelParryHighScore") + 1);
+
         menuController.LoadSceneByString("PPGameWon");
     }
 
