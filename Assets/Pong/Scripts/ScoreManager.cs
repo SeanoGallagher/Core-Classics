@@ -31,8 +31,17 @@ public class ScoreManager : MonoBehaviour
     }
     private void CheckScore()
     {
-        if(player1Score == scoreToReach || player2Score == scoreToReach)
+        // Mason Audet altered the code on 11/29/23 to add in the global score saving elements
+
+        if(player1Score == scoreToReach)
         {
+            PlayerBlankWins.playerWin = true;
+            SceneManager.LoadScene(gameOverSceneName);
+        }
+
+        if(player2Score == scoreToReach)
+        {
+            PlayerBlankWins.playerWin = false;
             SceneManager.LoadScene(gameOverSceneName);
         }
     }

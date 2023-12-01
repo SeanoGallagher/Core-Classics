@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pixel Parry Game/Scenes/PPGameOver.unity
     guid: af76edc736c5c01419aa604852953663
+  - enabled: 1
+    path: Assets/Pixel Parry Game/Scenes/PPMainMenu.unity
+    guid: 8a24a6a7bff026a47a6f7c9e1e1e5687
   m_configObjects: {}

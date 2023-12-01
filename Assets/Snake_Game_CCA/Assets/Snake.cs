@@ -29,7 +29,7 @@ public class Snake : MonoBehaviour
         _segments = new List<Transform>();
         _segments.Add(this.transform);
         scoreText.text = "Score: " + Scoring.totalScore;
-        topScoreText.text = "Top Score: " + Scoring.topScore;
+        topScoreText.text = "Top Score: " + PlayerPrefs.GetInt("SnakeHighScore");
         Time.fixedDeltaTime = 0.07f;
     }
 
@@ -122,11 +122,11 @@ public class Snake : MonoBehaviour
             Scoring.totalScore += 1;
             scoreText.text = "Score: " + Scoring.totalScore;
 
-            if (Scoring.totalScore > Scoring.topScore){
-            Scoring.topScore = Scoring.totalScore;
+            if (Scoring.totalScore > PlayerPrefs.GetInt("SnakeHighScore")){
+            PlayerPrefs.SetInt("SnakeHighScore", Scoring.totalScore);
             }
 
-        topScoreText.text = "Top Score: " + Scoring.topScore;
+        topScoreText.text = "Top Score: " + PlayerPrefs.GetInt("SnakeHighScore");
 
         } else if (other.tag == "Obstacle") { //If the player runs into a wall or themselves the game resets (walls and body tagged as "Obstacle")
             ResetState();
