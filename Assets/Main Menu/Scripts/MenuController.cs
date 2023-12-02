@@ -7,13 +7,18 @@ using UnityEngine.SceneManagement;
 public class MenuController: MonoBehaviour
 {
     public bool paused;
+    bool settingsMenuOpen;
     GameObject pauseMenu;
+    GameObject settingsMenu;
 
     private void Awake()
     {
         paused = false;
         pauseMenu = GameObject.FindGameObjectWithTag("Pause Menu");
         ClosePauseMenu();
+
+        settingsMenu = GameObject.FindGameObjectWithTag("Settings Menu");
+        CloseSettingsMenu();
     }
 
     public void LoadSceneByString(string sceneName)
@@ -21,6 +26,7 @@ public class MenuController: MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    // Handles Pause Menu
     void OpenClosePauseMenu()
     {
         if (paused)
@@ -34,24 +40,29 @@ public class MenuController: MonoBehaviour
     }
     public void OpenPauseMenu()
     {
-        if (SceneManager.GetActiveScene().name == "Main Menu")
-        {
-            return;
-        }
         paused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
     public void ClosePauseMenu()
     {
-        if (SceneManager.GetActiveScene().name == "Main")
-        {
-            return;
-        }
         paused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
+
+    public void OpenSettingsMenu()
+    {
+        settingsMenuOpen = true;
+        settingsMenu.SetActive(true);
+    }
+    public void CloseSettingsMenu()
+    {
+        settingsMenuOpen = false;
+        settingsMenu.SetActive(false);
+    }
+
+    // Handles Settings Menu
 
     public void QuitGame()
     {
@@ -64,6 +75,9 @@ public class MenuController: MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)) 
         {
             OpenClosePauseMenu();
+
+            if(settingsMenuOpen)
+                CloseSettingsMenu();
         }
     }
 
