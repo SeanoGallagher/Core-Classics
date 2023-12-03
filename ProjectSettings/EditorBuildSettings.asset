@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pixel Parry Game/Scenes/PPGameOver.unity
     guid: af76edc736c5c01419aa604852953663
+  - enabled: 1
+    path: Assets/Flappy Bird/Scenes/Flappy Bird.unity
+    guid: bfe300a2df215944ea55bab8c5e7b352
+  - enabled: 1
+    path: Assets/Flappy Bird/Scenes/Flappy GameOver.unity
+    guid: 34a63048766179842abcfdadacea2b20
+  - enabled: 1
+    path: Assets/Flappy Bird/Scenes/Flappy Start.unity
+    guid: a54ac19166b52ca4e9dc220110c66243
   m_configObjects: {}
