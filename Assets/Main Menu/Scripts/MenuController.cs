@@ -15,9 +15,13 @@ public class MenuController: MonoBehaviour
     {
         paused = false;
         pauseMenu = GameObject.FindGameObjectWithTag("Pause Menu");
+        if (pauseMenu == null)
+            pauseMenu = new GameObject("Fake Pause Menu");
         ClosePauseMenu();
 
         settingsMenu = GameObject.FindGameObjectWithTag("Settings Menu");
+        if (settingsMenu == null)
+            settingsMenu = new GameObject("Fake Settings Menu");
         CloseSettingsMenu();
     }
 
