@@ -44,6 +44,8 @@ public class MenuController: MonoBehaviour
     }
     public void OpenPauseMenu()
     {
+        if (pauseMenu.name == "Fake Pause Menu")
+            return;
         paused = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
