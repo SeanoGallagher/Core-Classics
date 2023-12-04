@@ -6,5 +6,9 @@ public class addScore : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision){
         Score.score++;
+
+        if(Score.score > PlayerPrefs.GetInt("FlappyBirdHighScore")){ //Mason Audet added this fragment on 12/4/23 to keep track of FB high score
+            PlayerPrefs.SetInt("FlappyBirdHighScore", Score.score);
+        }
     }
 }
