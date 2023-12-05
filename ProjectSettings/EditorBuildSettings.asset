@@ -38,4 +38,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Pixel Parry Game/Scenes/PPMainMenu.unity
     guid: 8a24a6a7bff026a47a6f7c9e1e1e5687
+  - enabled: 1
+    path: Assets/spaceinvaders/Scenes/SI End.unity
+    guid: 16b0859c4cdfc8c449977b83f276de90
+  - enabled: 1
+    path: Assets/spaceinvaders/Scenes/SI Start.unity
+    guid: e905c3847612d2b4da0663b2de180b7c
+  - enabled: 1
+    path: Assets/spaceinvaders/Scenes/spaceinvadser.unity
+    guid: 0801025d4b308cd4bb41490b262e47f1
   m_configObjects: {}

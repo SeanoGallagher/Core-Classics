@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
-        
+            Si_Score.SIscore++;
         }
 
         if(collision.gameObject.tag == "Boundary")
