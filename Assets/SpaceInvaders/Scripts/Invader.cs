@@ -13,10 +13,12 @@ public class Invader : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
     private int _animationFrame;
+    private SIScores scores;
 
     private void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        scores = GameObject.FindWithTag("Score Controller").GetComponent< SIScores>();
         
     }
 
@@ -42,6 +44,7 @@ public class Invader : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Laser"))
         {
+            scores.IncrementScore();
             this.killed.Invoke();
             this.gameObject.SetActive(false);
         }

@@ -107,7 +107,7 @@ public class Invaders : MonoBehaviour
 
         if (this.amountKilled >= this.totalInvaders)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("SI End");
         }
     }
    

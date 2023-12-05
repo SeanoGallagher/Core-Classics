@@ -31,7 +31,7 @@ public class SIPlayer : MonoBehaviour
 
     private void Shoot()
     {
-        if (true || !_laserActive)
+        if (!_laserActive)
         {
             Projectile projectile = Instantiate(this.laserPrefab, this.transform.transform.position, Quaternion.identity);
             projectile.destroyed += LaserDestroyed;
@@ -48,11 +48,12 @@ public class SIPlayer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Invader") ||
-            other.gameObject.layer == LayerMask.NameToLayer("Missle"))
+            other.gameObject.layer == LayerMask.NameToLayer("Missile"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("SI End");
         }
     }
+
        
 
 }
