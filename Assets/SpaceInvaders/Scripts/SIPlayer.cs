@@ -31,7 +31,7 @@ public class SIPlayer : MonoBehaviour
 
     private void Shoot()
     {
-        if (!_laserActive)
+        if (true || !_laserActive)
         {
             Projectile projectile = Instantiate(this.laserPrefab, this.transform.transform.position, Quaternion.identity);
             projectile.destroyed += LaserDestroyed;
