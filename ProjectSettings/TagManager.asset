@@ -8,6 +8,7 @@ TagManager:
   - Settings Menu
   - Obstacle
   - Score Controller
+  - Objective
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - Invader
   - Laser
   - Missile
-  - 
-  - 
+  - Ladder
+  - Ground
   - 
   - 
   - 
