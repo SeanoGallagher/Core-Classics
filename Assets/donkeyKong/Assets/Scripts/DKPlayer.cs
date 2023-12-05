@@ -123,15 +123,15 @@ else if(direction.x != 0f) {
     {
         if (collision.gameObject.CompareTag("Objective"))
         {
-            enabled = false;
-            FindObjectOfType<DKGameManager>().LevelComplete();
+            DKScore.DK_score+=100;
+            SceneManager.LoadScene("Dk End");
         }
-        else if (collision.gameObject.CompareTag("Obstacle"))
+
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             enabled = false;
-            FindObjectOfType<DKGameManager>().LevelFailed();
             //change scene to "Losescene
-            SceneManager.LoadScene("LoseScreen");
+            SceneManager.LoadScene("Dk End");
 
         }
     }

@@ -902,6 +902,18 @@ MonoBehaviour:
           m_StringArgument: DK Main
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2135168346}
+        m_TargetAssemblyTypeName: DKScore, Assembly-CSharp
+        m_MethodName: ResetScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1109589714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1743,6 +1755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135168345}
   - component: {fileID: 2135168344}
+  - component: {fileID: 2135168346}
   m_Layer: 0
   m_Name: Menu Controller
   m_TagString: Untagged
@@ -1778,3 +1791,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2135168346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135168343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34362f5596f4bf349ac6769f51134a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

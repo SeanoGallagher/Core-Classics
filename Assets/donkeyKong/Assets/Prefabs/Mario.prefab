@@ -142,5 +142,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4642e831287c54d919e8a2d210a35e9a, type: 3}
   - {fileID: 21300000, guid: 6dbcaffddacc3461681f505d3a5be031, type: 3}
   climbSprite: {fileID: 21300000, guid: 131f9c4906e2847a3a873eecfdfb4789, type: 3}
-  moveSpeed: 3
-  jumpStrength: 4
+  moveSpeed: 4
+  jumpStrength: 3

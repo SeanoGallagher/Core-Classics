@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3750455392161645213}
   - component: {fileID: 4164501513889357447}
   - component: {fileID: 6109043469611852748}
+  - component: {fileID: 5939191106346458915}
+  - component: {fileID: 4703267507414565422}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Obstacle
@@ -136,4 +138,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cf31c2328f54638a6ea4cbb3bef52b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1000
+--- !u!114 &5939191106346458915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050810345654275110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362bb61a63ed4ed43bd7194dbd89c31f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &4703267507414565422
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050810345654275110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2529048, y: 0.95393914}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.75}
+    newSize: {x: 0.75, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.24419038, y: 1.1848189}
+  m_EdgeRadius: 0

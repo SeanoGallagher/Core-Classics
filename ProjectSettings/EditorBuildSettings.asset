@@ -56,4 +56,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SpaceInvaders/Scenes/SpaceInvaders.unity
     guid: 79646de616a554cbfa180d5d5a7441aa
+  - enabled: 1
+    path: Assets/donkeyKong/Assets/Scenes/DK End.unity
+    guid: 1f8fa6404a440304ea5079cf0b4ed507
+  - enabled: 1
+    path: Assets/donkeyKong/Assets/Scenes/DK Main.unity
+    guid: 5bca544d54aedbd418544cc8a76b24a7
+  - enabled: 1
+    path: Assets/donkeyKong/Assets/Scenes/DK Start.unity
+    guid: e4848c71998686040893777a39a9ba82
   m_configObjects: {}
