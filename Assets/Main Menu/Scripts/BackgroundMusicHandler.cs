@@ -21,6 +21,7 @@ public class BackgroundMusicHandler : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+
     }
 
     public void SetVolume(float value)
