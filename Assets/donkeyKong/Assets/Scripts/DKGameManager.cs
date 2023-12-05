@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class DKGameManager : MonoBehaviour
 {
     private int level; //keeping track of current level 
     private int lives ; //keeping track of how many lives 

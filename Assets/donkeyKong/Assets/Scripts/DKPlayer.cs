@@ -124,12 +124,12 @@ else if(direction.x != 0f) {
         if (collision.gameObject.CompareTag("Objective"))
         {
             enabled = false;
-            FindObjectOfType<GameManager>().LevelComplete();
+            FindObjectOfType<DKGameManager>().LevelComplete();
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
             enabled = false;
-            FindObjectOfType<GameManager>().LevelFailed();
+            FindObjectOfType<DKGameManager>().LevelFailed();
             //change scene to "Losescene
             SceneManager.LoadScene("LoseScreen");
 

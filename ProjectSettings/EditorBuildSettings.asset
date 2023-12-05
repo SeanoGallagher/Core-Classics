@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Flappy Bird/Scenes/Flappy Start.unity
     guid: a54ac19166b52ca4e9dc220110c66243
+  - enabled: 1
+    path: Assets/donkeyKong/Assets/Scenes/StartMenu.unity
+    guid: 00503515970e9450ab7d2d3f0554e143
+  - enabled: 1
+    path: Assets/donkeyKong/Assets/Scenes/Level1.unity
+    guid: 5bca544d54aedbd418544cc8a76b24a7
+  - enabled: 1
+    path: Assets/donkeyKong/Assets/Scenes/LoseScreen.unity
+    guid: dc998e3d16e834b759fa61cfc3180e22
   m_configObjects: {}
