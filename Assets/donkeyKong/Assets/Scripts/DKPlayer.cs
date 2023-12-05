@@ -137,7 +137,11 @@ public class DKPlayer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Objective"))
         {
-            DKScore.DK_score+=100;
+            //DKScore.DK_score+=100;
+
+
+            PlayerPrefs.SetInt("DonkeyKongHighScore", PlayerPrefs.GetInt("DonkeyKongHighScore") + 1);
+
             SceneManager.LoadScene("Dk End");
         }
 

@@ -854,6 +854,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: -6536722218810313745, guid: 31c3eefc9507e4903a8c6ae77698e33b, type: 3}
+      propertyPath: jumpStrength
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 386631419477212118, guid: 31c3eefc9507e4903a8c6ae77698e33b, type: 3}
       propertyPath: m_Mass
       value: 1
@@ -1079,8 +1083,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4050810345654275110, guid: 883fd9c8015084decac74c4694687b0a, type: 3}
-  minTime: 2
-  maxTime: 4
+  minTime: 4
+  maxTime: 10
 --- !u!4 &787422018
 Transform:
   m_ObjectHideFlags: 0

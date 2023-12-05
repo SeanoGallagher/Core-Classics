@@ -11,6 +11,7 @@ public class BarrelScore : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             DKScore.DK_score++;
+
         }
     }
 }

@@ -42,7 +42,7 @@ public class TopScores : MonoBehaviour
         //Updates the high score for the Space Invaders game
         SpaceInvadersHighScoreText.text = "High Score: " + PlayerPrefs.GetInt("SpaceInvadersHighScore");
         //Updates the high score for the Donkey Kong game
-        DonkeyKongHighScoreText.text = "High Score: " + PlayerPrefs.GetInt("DonkeyKongHighScore");
+        DonkeyKongHighScoreText.text = "Total Wins: " + PlayerPrefs.GetInt("DonkeyKongHighScore");
         //Updates player win count for the Pixel Parry game
         PixelParryHighScoreText.text = "Total Player Wins: " + PlayerPrefs.GetInt("PixelParryHighScore");
         //Updates the high score for Flappy Bird
