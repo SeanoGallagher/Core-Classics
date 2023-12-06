@@ -12,7 +12,7 @@ public class SettingsMenu : MonoBehaviour
 
     Resolution[] resolutions;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         VolumeStart();
         ResolutionStart();
@@ -58,12 +58,16 @@ public class SettingsMenu : MonoBehaviour
 
         List<string> resolutionStrings = new List<string>();
 
+        string currentResolution = "";
+
         int currentResolutionIndex = 0;
         for(int i = 0; i < resolutions.Length; i++)
         {
             string resoltion = resolutions[i].width + " x " + resolutions[i].height;
+            
+            currentResolution = resoltion;
             resolutionStrings.Add(resoltion);
-
+            
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;

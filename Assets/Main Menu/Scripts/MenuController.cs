@@ -11,7 +11,7 @@ public class MenuController: MonoBehaviour
     GameObject pauseMenu;
     GameObject settingsMenu;
 
-    private void Awake()
+    private void Start()
     {
         paused = false;
         pauseMenu = GameObject.FindGameObjectWithTag("Pause Menu");
